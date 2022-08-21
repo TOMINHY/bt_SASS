@@ -53,6 +53,10 @@ header .nav-item .nav-link {
   font-size: 14px;
   font-weight: 600;
   line-height: 80px;
+  transition: 0.3s;
+}
+header .nav-item .nav-link:hover {
+  color: #b21981;
 }
 header .circle {
   height: 10px;

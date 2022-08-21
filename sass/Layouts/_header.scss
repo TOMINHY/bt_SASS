@@ -27,6 +27,10 @@ header {
     .nav-link {
       @include styleText($color-black-1, $fs-1, $fw-2);
       line-height: 80px;
+      transition: 0.3s;
+      &:hover{
+        color: #b21981;
+      }
     }
   }
   .circle {
