@@ -161,6 +161,7 @@ header .header__section nav {
 }
 .team__group #team .row {
   display: flex;
+  flex-wrap: nowrap;
   margin-left: -30px;
 }
 .team__group #team .row .col-3 {

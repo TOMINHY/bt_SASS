@@ -8,6 +8,7 @@
     
     #team .row{
         display: flex;
+        flex-wrap: nowrap;
         margin-left: $mg-5;
         .col-3{
             padding: 0;
