@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: "Roboto",Arial,Helvetica,sans-serif;
+}
+
+h5{
+    @include styleText($color-white-3, $fs-5, $fw-2);
+    
+}
+ul{
+    list-style: none;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+

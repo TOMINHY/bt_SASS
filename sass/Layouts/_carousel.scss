@@ -1,0 +1,29 @@
+#carousel .row{
+    position: absolute;
+    margin: 0 auto;
+    top: 60px;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 3;
+    .carousel__content{
+        position: relative;
+        .bg__carousel{
+            position: absolute;
+            left: 0;
+            bottom: 30px;
+        }
+        p{
+            @include styleText($color-pink-1,$fs-2,$fw-2);
+           
+        }
+        h3{
+            @include styleText($color-black-0,$fs-4,$fw-3)
+        }
+    }
+}
+
+
+

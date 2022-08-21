@@ -1,0 +1,26 @@
+@mixin styleText($color,$fs,$fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin styleButton($pd,$bg,$color){
+    padding: $pd;
+    background: $bg;
+    color: $color;
+}
+
+
+@mixin responsive($screen){
+    @if (map-has-key($map: $breakpoints, $key: $screen)){
+        // tìm thây tên màn hình trong danh sách của $breakpoints
+        $value: map-get($map: $breakpoints, $key: $screen);
+        // code css 3
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }
+    @else{
+        @warn "Sai ten man hinh ne";
+    }
+}

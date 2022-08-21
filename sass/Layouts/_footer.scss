@@ -1,0 +1,91 @@
+footer {
+  background-image: url(../../img/footer_background.jpg);
+  height: 400px;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  ::-webkit-input-placeholder {
+    caret-color: $color-white-3;
+    text-align: center;
+    color: $color-white-3;
+  }
+  .group__contact {
+    color: $color-white-3;
+    font-size: $fs-1;
+  }
+
+  .icon-color {
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      color: $color-back-2;
+    }
+  }
+  .group__pages {
+    li {
+      margin-bottom: $mg-9;
+      a {
+        color: $color-white-3;
+        border-bottom: 1px solid #970572;
+        font-size: $fs-1;
+        transition: all 0.2s;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  .group__button {
+    input {
+      height: 45px;
+      text-align: center;
+      background-color: #a9027e;
+      border: 1px solid #b3298b;
+      border-radius: 20px;
+      margin-top: $mg-1;
+      color: $color-white-3;
+    }
+    .form-control:focus {
+      color: $color-white-3;
+      background-color: $bg-pink;
+      border-color: $color-white-3;
+      outline: none;
+      border: 1px solid $color-white-3;
+      box-shadow: none;
+    }
+    .btn-background-scale {
+      margin-top: $mg-8;
+      padding: $pd-9;
+      width: 250px;
+      border-radius: 20px;
+      @include styleText($color-black-1, $fs-1, $fw-2);
+      border: none;
+      outline: none;
+      background-color: $color-white-3;
+      position: relative;
+      z-index: 1;
+      transition: transform 0.2s ease-in-out;
+      &:hover{
+        color: $color-white-3;
+      }
+    }
+    .btn-background-scale::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #A9027E;
+      border-radius: 20px;
+      border: 1px solid $color-white-3;
+      transition: transform 0.2s ease-in-out;
+      transform: scaleY(0);
+      z-index: -1;
+    }
+    .btn-background-scale:hover::before,
+    .btn-background-scale:focus::before {
+      transform: scaleY(1);
+    }
+  }
+}
